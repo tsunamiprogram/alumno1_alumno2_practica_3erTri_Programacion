@@ -1,0 +1,43 @@
+PARTE OBLIGATORIA
+
+Diseñe un sistema de gestión académica para una escuela que la gestión de alumnos y cursos. Cada alumno puede estar inscrito en varios cursos y cada curso puede ser tomado por varios alumnos.
+
+El sistema debe permitir:
+
+a) Crear nuevos alumnos, con al menos los siguientes datos: nombre, apellido, correo electrónico y teléfono. También se debe permitir la modificación de cualquiera de los campos indicados así como la eliminación de alumnos. Habrá que pedir confirmación al usuario antes de borrar o modificar.
+b) Crear nuevos cursos, con información sobre el nombre, la descripción y el número de horas. También se debe permitir la modificación de cualquiera de los campos indicados así como la eliminación de cursos. También con confirmación por parte del usuario.
+c) Asociar a cada alumno los cursos en los que está inscrito, fechas de inicio y fin(mes y año) y la calificación obtenida en cada curso. La fecha de finalización no podrá ser introducida por el usuario, ésta se guardará automáticamente en el momento en el que se califique al alumno. Así, al principio del curso, el alumno se "matricula" en el curso, y al final del mismo, se le "evalúa". Se debe permitir la modificación y el borrado (con confirmación). 
+d) Mostrar la lista de alumnos inscritos en un curso y la lista de cursos en los que está inscrito un alumno.
+e) Obtener un informe con la lista de alumnos(nombre completo), los cursos(nombre) en los que están inscritos y sus notas.
+
+La funcionalidad anterior debe implementarse en un programa java con interfaz gráfica utilizando la librería "swing" y los datos deben estar en una base de datos MySQL. El informe se generará en un fichero de texto.
+
+
+
+PARTE OPCIONAL (3 puntos)
+
+-Obtener un informe con la lista de cursos(nombre), sus descripciones y la lista de alumnos(nombre completo) inscritos en cada curso. (0,5p)
+-Utilización del componente JTable para mostrar los datos en la interfaz. Se deberá utilizar al menos para implementar el punto d), aunque también podría utilizarse para mostrar los alumnos y cursos.(0,5p)
+-Permitir realizar una copia de seguridad de los alumnos en un fichero. Dicha copia de seguridad también se debe poder reponer y actualizar así la base de datos. La tabla de los alumnos se sobrescribiría entera. También se puede realizar una copia de las 3 tablas(2p)
+-Las foreign keys son opcionales. En caso de no usarlas se restará 0,5 puntos a la nota final.
+
+
+
+Podéis utilizar las siguientes tablas en la base de datos:
+
+alumnos (id_alumno, nombre, apellido, correo_electronico, telefono)
+cursos (id_curso, nombre, descripcion, creditos)
+inscripciones (id_inscripcion, id_alumno, id_curso, calificacion)
+
+El nombre de la base de datos creada por el programa deberá llamarse nombre1_nombre2_centroFormacion.
+
+Los datos de conexión a la base de datos deberán leerse de un fichero de texto.
+
+
+Paletas de colores:
+https://visme.co/blog/es/combinacion-de-colores/
+
+
+Utopía:
+https://lfmagazine.photo/utopia-la-obra-de-arte-que-no-pudo-culminar/
+https://mundoawesome.wordpress.com/2014/08/13/utopia/
